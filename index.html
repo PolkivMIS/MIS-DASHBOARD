@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MIS Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Logo above the buttons -->
+      <div class="logo">
+        <img src="RS.jpg" alt="Logo">
+      </div>
+
+      <!-- Scrollable menu -->
+      <div class="menu">
+
+        <!-- Button that reveals subtabs -->
+        <button class="cta" onclick="loadPage('', this, true, null)">
+          <img src="icons/FORM.gif" alt="Future icon" class="icon">
+          <span class="now">Google Forms</span>
+          <span class="play">Google Forms</span>
+        </button>
+
+        <!-- Each tab passes: embed URL, this, false, script editor URL -->
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/12so3o5nh4KDC2tqb57qudFWtb8T8gKHMjufNi-x88Ik/edit?gid=204054895#gid=204054895',
+          this,
+          false,
+          'https://script.google.com/d/16nGw4N35QQy3zivoV9Ya3EzF2StmEK2kWQ8TtyS-OLSHyy11Yc2kIGoh/edit'
+        )">
+          <img src="icons/Goods RS.gif" alt="icon" class="icon">
+          <span class="now">GPO (R.S.Trade)</span>
+          <span class="play">GPO (R.S.Trade)</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/1_MxFVONbx1lx5bQSrtMrGz4_GZONPJlyUNb_LaX4L6o/edit?gid=785912789#gid=785912789',
+          this,
+          false,
+          'https://script.google.com/d/1__0MZWlKoeJv5oFr875dnKWam9rvEvnMTXFIq4U58a9Q1NzYYVK0-hfA/edit'
+        )">
+          <img src="icons/Goods BS.gif" alt="icon" class="icon">
+          <span class="now">GPO (B.S.Retails)</span>
+          <span class="play">GPO (B.S.Retails)</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/1HFxlrRylkGRfiaNH9hakiZWaOcB8NbJAAkVp7l-8bCc/edit?gid=457050862#gid=457050862',
+          this,
+          false,
+          'https://script.google.com/d/1btq2pdj5necXPwKsFCM_Lbc2wWThIU3fkCtWmVdEaiK7w9TxWbtFk-18/edit'
+        )">
+          <img src="icons/SALES.gif" alt="icon" class="icon">
+          <span class="now">SALES MASTER</span>
+          <span class="play">SALES MASTER</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/1hzRpwGhPUN96lj_ZVh0S7ymygilcT3aRmu1pXhUdrHY/edit?gid=0#gid=0',
+          this,
+          false,
+          'https://script.google.com/d/16Vv-yFf5D3ZljkOCNS1lYqpdFlpJScTZOTeVY4i37kUuBSXPOS9ZvBRS/edit'
+        )">
+          <img src="icons/TRAVEL EXPENSE.gif" alt="icon" class="icon">
+          <span class="now">TRAVEL EXPENSE</span>
+          <span class="play">TRAVEL EXPENSE</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/1HHksztjlW6DJACCWBxYOC_kbhtP1QZ3XivI29_Ur0Qk/edit?gid=1453897487#gid=1453897487',
+          this,
+          false,
+          'https://script.google.com/u/0/home/projects/1xlntDYxDKNV9LJTR9MmCJHi_JaQtVrOzw5xmOy85probwDIlceKWI0PX/edit'
+        )">
+          <img src="icons/STORE EXPENSE.gif" alt="icon" class="icon">
+          <span class="now">STORE EXPENSE</span>
+          <span class="play">STORE EXPENSE</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/1qUB7gJz8__HBnCTNTzuCbgzNTxkYYPQO74YA5gh2l7E/edit?gid=2062403752#gid=2062403752',
+          this,
+          false,
+          'https://script.google.com/d/1rKY3V1arEumytaloPjVWsdvyzE7FjZ2Jqr-GQGdFTIPw2zVT8o3yadva/edit'
+        )">
+          <img src="icons/SHOP.gif" alt="icon" class="icon">
+          <span class="now">SHOP-in-SHOP</span>
+          <span class="play">SHOP-in-SHOP</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/10mSGlLUMTTLEyz9HenfbavVw4tZRIZGjWKxjUya7Z4g/edit?gid=740661783#gid=740661783',
+          this,
+          false,
+          'https://script.google.com/d/13Du40rd9uv71FcgdYQc8A-NpQjd2Zk6XPT2xSRodvMOXgOvZbOuKng5G/edit'
+        )">
+          <img src="icons/DAILY_SALE.gif" alt="icon" class="icon">
+          <span class="now">DAILY SALES REPORT</span>
+          <span class="play">DAILY SALES REPORT</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/16knrcUaOpvowE47mnZpQyNPzv_bllefjT7KutH9qFkA/edit?gid=1504729487#gid=1504729487',
+          this,
+          false,
+          'https://script.google.com/d/1tkx3zsAf085iCSdMdpNLWiRtR0K9IiB1auli06j_O_HihoVXsD3ms3l_/edit'
+        )">
+          <img src="icons/ATTENDENCE.gif" alt="icon" class="icon">
+          <span class="now">STORE ATTENDENCE</span>
+          <span class="play">STORE ATTENDENCE</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/13K5MocwlttfQ7ziLHmDNTE32GK6c2DdSL-R92m-s5pY/edit?gid=1206496448#gid=1206496448',
+          this,
+          false,
+          'https://script.google.com/d/1s9noHc36-aTp8RlKXCoVbxhC7qIz_q93lH_LghRmZlYKASErYIPn4cQl/edit'
+        )">
+          <img src="icons/COLLECTION.gif" alt="icon" class="icon">
+          <span class="now">COLLECTION DATA</span>
+          <span class="play">COLLECTION DATA</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/1BmUGEmSFK8ryIirAR4jGLL2ErLS8AjV93Rp7CMQ7yZw/edit?gid=0#gid=0',
+          this,
+          false,
+          'https://script.google.com/d/1gxirH88O6K-AEG6AlYSMT7T33TSb2GtlgW3mA6NsNdHapuICnXRlfEHZ/edit'
+        )">
+          <img src="icons/COLLECTION.gif" alt="icon" class="icon">
+          <span class="now">COLLECTION DATA<br>(SALES PERSON)</span>
+          <span class="play">COLLECTION DATA<br>(SALES PERSON)</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/1orbA2EhpfwH1wMFXbKvTaV-GOopDzDcYwPq_43ETVXQ/edit?gid=1970958643#gid=1970958643',
+          this,
+          false,
+          'https://script.google.com/d/1wFIPMGE8BUzwymQs9JukJJyFjvnn2OxvVX5IWp5CLHC9oQpKkIorNm_A/edit'
+        )">
+          <img src="icons/BILLWISE.gif" alt="icon" class="icon">
+          <span class="now">BILLWISE REPORT</span>
+          <span class="play">BILLWISE REPORT</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/1byeM1rkUkeFAq_VgqQQuOr_lzPBmLY52LiE7PshpkjA/edit?gid=1905609983#gid=1905609983',
+          this,
+          false,
+          'https://script.google.com/d/1f3LO-QtySEHZKPvgMXGujo62jkyp0voxzkQEQtRr6TK3ab4Hk1L1bYpw/edit'
+        )">
+          <img src="icons/CHECKLIST.gif" alt="icon" class="icon">
+          <span class="now">OPERATION CHECKLIST</span>
+                    <span class="play">OPERATION CHECKLIST</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/1YEV6GtAV1o656v29Mt5Pi29dnkz99a3HIK9I5-9AwBc/edit?gid=26773441#gid=26773441',
+          this,
+          false,
+          'https://script.google.com/d/1I6p5nDNYm4X-EB87TLz-lOEm5wKGByhK3aVyVIH6Hc9rDcDIbYEt62ed/edit'
+        )">
+          <img src="icons/ASSIGN_TASK.gif" alt="icon" class="icon">
+          <span class="now">ASSIGNED TASK LIST</span>
+          <span class="play">ASSIGNED TASK LIST</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/1G4ziBQ_LTThiR8Hj957O8pcsNFZwXFHIRysAzEnQ7yg/edit?gid=520021185#gid=520021185',
+          this,
+          false,
+          'https://script.google.com/d/1gpHEH5vvVM85dyvarZh8YgmBUM_gheit2FJqg4mydW3oBleoY4OXxFDJ/edit'
+        )">
+          <img src="icons/LEAVE.gif" alt="icon" class="icon">
+          <span class="now">LEAVE AND ADVANCE</span>
+          <span class="play">LEAVE AND ADVANCE</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/1NGGg18H4BwwVIHfx5CwrXIxM37FIbH3V0zZBGflhcvg/edit?gid=1769337254#gid=1769337254',
+          this,
+          false,
+          'https://script.google.com/u/0/home/projects/17sZOhZsunScsnt-MQXhpIk5xHfv7DptiopybxtGJN6P16gs5I-O0jrfM/edit'
+        )">
+          <img src="icons/PARTNER.gif" alt="icon" class="icon">
+          <span class="now">CASHBOOK (MEGHA)</span>
+          <span class="play">CASHBOOK (MEGHA)</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d//1FaS25RxzPm2iXr_i-ySquYiUXFunX_9yYvTFNYUrZug/edit?gid=1715037745#gid=1715037745',
+          this,
+          false,
+          'https://script.google.com/u/0/home/projects/1sesUuGGOO9Rc-JOggIrbm5SoM_Nq7RV5j9QQONL3pMRKwqdsK0XHVRGt/edit'
+        )">
+          <img src="icons/INVENTORY.gif" alt="icon" class="icon">
+          <span class="now">IMS (MEGHA)</span>
+          <span class="play">IMS (MEGHA)</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d/1aHDrnPC1Ubqw5plXhmkW_Xcs7aF5eMrcb3q_u88Gi9Q/edit?gid=0#gid=0',
+          this,
+          false,
+          'https://script.google.com/u/0/home/projects/1WFlF-agA1zwxRtCODijq5ReqSPgbzca8HTgQVmu6U3aZOIWLJNjEBbQL/edit'
+        )">
+          <img src="icons/PRODUCTION.gif" alt="icon" class="icon">
+          <span class="now">MSL COUNTER (MEGHA)</span>
+          <span class="play">MSL COUNTER (MEGHA)</span>
+        </button>
+
+        <button class="cta" onclick="loadPage(
+          'https://docs.google.com/spreadsheets/d//11py3YTRLSnPnwvQJi9TVi7GGT-jH8LUrV05KuZ4HQh0/edit?gid=0#gid=0',
+          this,
+          false,
+          'https://script.google.com/u/0/home/projects/create?parent=11py3YTRLSnPnwvQJi9TVi7GGT-jH8LUrV05KuZ4HQh0&emtoken=ARViON7ilvajqe-_jwxo268xoIl7%3A1768289093879'
+        )">
+          <img src="icons/PARTNER2.gif" alt="icon" class="icon">
+          <span class="now">NE FNB EXPENSE DATA</span>
+          <span class="play">NE FNB EXPENSE DATA</span>
+        </button>
+
+        
+
+        <!-- Placeholder buttons -->
+        <button class="cta"><img src="icons/example.gif" alt="icon" class="icon"><span class="now">open</span><span class="play">Future Button 11</span></button>
+        <button class="cta"><img src="icons/example.gif" alt="icon" class="icon"><span class="now">open</span><span class="play">Future Button 12</span></button>
+        <button class="cta"><img src="icons/example.gif" alt="icon" class="icon"><span class="now">open</span><span class="play">Future Button 13</span></button>
+        <button class="cta"><img src="icons/example.gif" alt="icon" class="icon"><span class="now">open</span><span class="play">Future Button 14</span></button>
+        <button class="cta"><img src="icons/example.gif" alt="icon" class="icon"><span class="now">open</span><span class="play">Future Button 15</span></button>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main">
+      <div class="header">
+        <h1>MIS DASHBOARD</h1>
+        <div class="header-gif"> <img src="icons/CAR3.gif" alt="Dashboard Animation"> </div>
+      </div>
+
+      <!-- Subtabs container (hidden by default, shown only for Forms button) -->
+      <div id="subtabs" class="subtabs" style="display:none;">
+        <button class="subtab" onclick="loadPage(
+          'https://docs.google.com/forms/d/1P92DXx3cx58Lcs6uj_halsJMN26Q6_5HIuA4XemxMoY/viewform?embedded=true',
+          null,
+          false,
+          'https://docs.google.com/forms/d/1P92DXx3cx58Lcs6uj_halsJMN26Q6_5HIuA4XemxMoY/edit'
+        )">
+          GPO (RS) Form
+        </button>
+
+        <button class="subtab" onclick="loadPage(
+          'https://docs.google.com/forms/d/1iZ8dsPOdg7fdd2wiwhR3Js2yBjxew1Q_mDxd0CurU6U/viewform?embedded=true',
+          null,
+          false,
+          'https://docs.google.com/forms/d/1iZ8dsPOdg7fdd2wiwhR3Js2yBjxew1Q_mDxd0CurU6U/edit'
+        )">
+          GPO (BS) Form
+        </button>
+
+        <button class="subtab" onclick="loadPage(
+          'https://docs.google.com/forms/d/1w2haEToALZjeR-UMWx1g7TarW457oDGx9PD4b2BlRCI/viewform?embedded=true',
+          null,
+          false,
+          'https://docs.google.com/forms/d/1w2haEToALZjeR-UMWx1g7TarW457oDGx9PD4b2BlRCI/edit'
+        )">
+          DAILY SALES Form
+        </button>
+
+        <button class="subtab" onclick="loadPage(
+          'https://docs.google.com/forms/d/1AGywBSLjAM4d2QXAFw3-aONU4Zq9kjbdxigxFlkEqLU/viewform?embedded=true',
+          null,
+          false,
+          'https://docs.google.com/forms/d/1AGywBSLjAM4d2QXAFw3-aONU4Zq9kjbdxigxFlkEqLU/edit'
+        )">
+          LEAVE Form
+        </button>
+
+        <button class="subtab" onclick="loadPage(
+          'https://docs.google.com/forms/d/1blYDQi0Whq6j35ZzYaM5PhvR1h_kao39_EVZ3Pz6IuE/viewform?embedded=true',
+          null,
+          false,
+          'https://docs.google.com/forms/d/1blYDQi0Whq6j35ZzYaM5PhvR1h_kao39_EVZ3Pz6IuE/edit'
+        )">
+          ADVANCE Form
+        </button>
+
+        <button class="subtab" onclick="loadPage(
+          'https://docs.google.com/forms/d/1q6AXHtnH3cO5a392MFFAH-CJaHXFrQU3dNKBEBF501w/viewform?embedded=true',
+          null,
+          false,
+          'https://docs.google.com/forms/d/1q6AXHtnH3cO5a392MFFAH-CJaHXFrQU3dNKBEBF501w/edit'
+        )">
+          SALES FORM
+        </button>
+
+        <button class="subtab" onclick="loadPage(
+          'https://docs.google.com/forms/d/11F1iDlRGFLdDU5aWRltPLW_97v-ZFcKE6WK_9V7nuCg/viewform?embedded=true',
+          null,
+          false,
+          'https://docs.google.com/forms/d/11F1iDlRGFLdDU5aWRltPLW_97v-ZFcKE6WK_9V7nuCg/edit'
+        )">
+          NEW PARTY FORM
+        </button>
+
+
+        <button class="subtab" onclick="loadPage(
+          'https://docs.google.com/forms/d/1SCBD2boj3Szn0i9sNynRwY7P5F6BDInno40kKj2ksXs/viewform?embedded=true',
+          null,
+          false,
+          'https://docs.google.com/forms/d/1SCBD2boj3Szn0i9sNynRwY7P5F6BDInno40kKj2ksXs/edit'
+        )">
+          NE FNB (EXPENSE FORM)
+        </button>
+
+        <button class="subtab" onclick="loadPage(
+          'https://docs.google.com/forms/d/1CaBQ4czBjh80RobIMK5WhTrXDNzzl5QA5k_kNjR7TJk/viewform?embedded=true',
+          null,
+          false,
+          'https://docs.google.com/forms/d/1CaBQ4czBjh80RobIMK5WhTrXDNzzl5QA5k_kNjR7TJk/edit'
+        )">
+          TRAVEL EXPENSE FORM
+        </button>
+
+      </div>
+
+      <div class="content" style="position:relative;">
+        <!-- Overlay edit button (hidden by default) -->
+        <button id="editFormBtn" class="edit-overlay" style="display:none;" onclick="openEditForm()">
+          ✎ EDIT SCRIPT
+        </button>
+
+        <!-- Optional placeholder animation when iframe is empty -->
+        <div id="iframePlaceholder" class="iframe-placeholder">
+          <img src="icons/IDLE.gif" alt="Loading animation">
+          <p>Select a tab to load content</p>
+        </div>
+
+        <iframe id="viewer"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
