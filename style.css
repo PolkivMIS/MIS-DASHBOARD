@@ -217,11 +217,11 @@ button.cta.active::after {
 
 .header-gif {
   position: absolute;
-  right: 1rem;               /* pin gif to right side */
+  right: 7rem;               /* pin gif to right side */
 }
 
 .header-gif img {
-  height: 180px;
+  height: 110px;
   width: auto;
 }
 
@@ -306,3 +306,4 @@ iframe {
   background: #fbc638;
   border-radius: 4px;
 }
+
