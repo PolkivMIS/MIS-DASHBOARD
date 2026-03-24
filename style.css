@@ -46,6 +46,7 @@ html, body {
 /* Pill-style CTA Button */
 button.cta {
   display: flex;
+  margin_bottom: 5px;
   align-items: center;
   justify-content: flex-start;
   gap: 5%;
